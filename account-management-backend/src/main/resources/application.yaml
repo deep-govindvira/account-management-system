@@ -16,3 +16,5 @@ spring:
       enabled: true
 server:
   port: 8080
+jwt:
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.YourExampleJWTHere
