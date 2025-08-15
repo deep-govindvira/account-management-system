@@ -26,7 +26,8 @@ It demonstrates **OOP & SOLID principles** in the backend and provides a UI to m
 1. Clone the repository:
    ```
    git clone <repo-url>
-   cd bank-backend
+   cd account-management-system
+   cd account-management-backend
    ```
 
 2. Build and run:
@@ -150,7 +151,7 @@ curl -X POST http://localhost:8080/api/accounts/1/apply-interest
 1. Navigate to frontend folder:
 
    ```bash
-   cd bank-frontend
+   cd account-management-frontend
    ```
 
 2. Install dependencies:
@@ -170,50 +171,3 @@ curl -X POST http://localhost:8080/api/accounts/1/apply-interest
    ```
    http://localhost:3000
    ```
-
-### Features
-
-* Responsive UI using Bootstrap
-* Handles errors gracefully (no React red-screen errors)
-* Buttons disable and show spinner while API requests are running
-* Apply Interest button is visible only for **SAVINGS accounts**
-* All balances are shown in ₹ (paise converted to rupees)
-
-## Notes
-
-* **Interest Rate:** Currently hardcoded at 4% per year (monthly calculation). Can be made dynamic per account.
-* **Checking Accounts:** Do not earn interest and allow unlimited transactions.
-* **SAVINGS Accounts:** Earn interest but may have transaction limits (not implemented here).
-
-## Example cURL Commands
-
-**Create Account**
-
-```bash
-curl -X POST http://localhost:8080/api/accounts \
-  -H "Content-Type: application/json" \
-  -d '{"type":"SAVINGS","ownerName":"alice@example.com"}'
-```
-
-**Deposit**
-
-```bash
-curl -X POST http://localhost:8080/api/accounts/1/deposit \
-  -H "Content-Type: application/json" \
-  -d '{"accountId":1,"amountInPaise":50000}'
-```
-
-**Apply Interest**
-
-```bash
-curl -X POST http://localhost:8080/api/accounts/1/apply-interest
-```
-
-
-## Future Improvements
-
-* Dynamic interest rates per account
-* Transaction history for all accounts
-* Authentication & Authorization for users
-* Persist data in MySQL/PostgreSQL instead of H2 in-memory
-* Real-time updates using WebSocket for multi-user view
