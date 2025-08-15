@@ -2,8 +2,10 @@ package com.deepgovindvira.account.account_management_backend.adapter;
 
 import com.deepgovindvira.account.account_management_backend.port.NotificationPort;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Component;
 
 /**
  * To enable email notifications via Spring, uncomment these annotations.
