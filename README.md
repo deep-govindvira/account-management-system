@@ -171,3 +171,20 @@ curl -X POST http://localhost:8080/api/accounts/1/apply-interest
    ```
    http://localhost:3000
    ```
+
+## Docker
+
+1. In frontend directory
+```
+docker build -t frontend .
+```
+
+2. In backend directory
+```
+docker build -t backend .
+```
+
+3. In account-management-system directory
+```
+docker compose -p account-management-system up       
+```
