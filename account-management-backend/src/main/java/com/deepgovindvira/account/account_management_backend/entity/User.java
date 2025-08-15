@@ -1,14 +1,15 @@
 package com.deepgovindvira.account.account_management_backend.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
 @Entity
-@Table(name = "app_user")
+@Table(name = "users")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,5 +17,5 @@ public class User {
     @Column(unique = true)
     private String username;
 
-    private String password; // store encrypted
+    private String password;
 }
