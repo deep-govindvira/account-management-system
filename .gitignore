@@ -1,0 +1,31 @@
+# ===== Maven / Gradle (Spring Boot backend) =====
+account-management-backend/target/
+account-management-backend/.classpath
+account-management-backend/.project
+account-management-backend/.settings/
+account-management-backend/*.iml
+account-management-backend/.idea/
+account-management-backend/.mvn/wrapper/maven-wrapper.jar
+account-management-backend/.mvn/wrapper/maven-wrapper.properties
+account-management-backend/mvnw
+account-management-backend/mvnw.cmd
+
+# Logs
+*.log
+
+# ===== React frontend =====
+account-management-frontend/node_modules/
+account-management-frontend/build/
+account-management-frontend/.env.local
+account-management-frontend/.env.development.local
+account-management-frontend/.env.test.local
+account-management-frontend/.env.production.local
+
+# ===== Common IDE files =====
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# ===== OS-specific =====
+Thumbs.db
