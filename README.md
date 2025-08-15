@@ -25,7 +25,7 @@ It demonstrates **OOP & SOLID principles** in the backend and provides a UI to m
 
 1. Clone the repository:
    ```
-   git clone <repo-url>
+   git clone https://github.com/deep-govindvira/account-management-system
    cd account-management-system
    cd account-management-backend
    ```
