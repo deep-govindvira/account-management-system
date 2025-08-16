@@ -144,6 +144,12 @@ curl -X POST http://localhost:8080/api/accounts/1/apply-interest
 | POST   | `/api/accounts/transfer`            | Transfer money between accounts            |
 | POST   | `/api/accounts/{id}/apply-interest` | Apply interest (SAVINGS only)              |
 
+## run.sh
+If you have docker then open it and run below command in terminal.
+```
+chmod +x run.sh && ./run.sh
+```
+
 ## Frontend (React + Bootstrap)
 
 ### Setup & Run
